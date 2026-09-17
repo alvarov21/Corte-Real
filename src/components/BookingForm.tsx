@@ -69,7 +69,7 @@ export default function BookingForm() {
             type="text" 
             name="name" 
             required 
-            className="w-full bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all"
+            className="w-full text-base sm:text-sm bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all"
             placeholder="Juan Pérez"
           />
         </div>
@@ -79,7 +79,7 @@ export default function BookingForm() {
             type="tel" 
             name="phone" 
             required 
-            className="w-full bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all"
+            className="w-full text-base sm:text-sm bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all"
             placeholder="600 000 000"
           />
         </div>
@@ -90,7 +90,7 @@ export default function BookingForm() {
         <input 
           type="email" 
           name="email" 
-          className="w-full bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all"
+          className="w-full text-base sm:text-sm bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all"
           placeholder="juan@ejemplo.com (Opcional)"
         />
       </div>
@@ -101,7 +101,7 @@ export default function BookingForm() {
           name="service" 
           defaultValue=""
           required
-          className="w-full bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all appearance-none"
+          className="w-full text-base sm:text-sm bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all appearance-none"
         >
           <option value="" disabled>Selecciona un servicio...</option>
           <option value="Corte Clásico">Corte Clásico (15€)</option>
@@ -120,7 +120,7 @@ export default function BookingForm() {
             required 
             value={selectedDate}
             onChange={(e) => setSelectedDate(e.target.value)}
-            className="w-full bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all [color-scheme:dark]"
+            className="w-full text-base sm:text-sm bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all [color-scheme:dark]"
           />
         </div>
         <div className="space-y-2">
@@ -133,7 +133,7 @@ export default function BookingForm() {
             required
             defaultValue=""
             disabled={!selectedDate || isLoadingTimes}
-            className="w-full bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all appearance-none disabled:opacity-50"
+            className="w-full text-base sm:text-sm bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all appearance-none disabled:opacity-50"
           >
             <option value="" disabled>
               {!selectedDate ? 'Selecciona una fecha primero' : 'Selecciona una hora...'}
